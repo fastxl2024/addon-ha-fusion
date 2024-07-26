@@ -8,7 +8,7 @@ WORKDIR /app
 ### remote
 # clone, build and remove repo example data
 RUN git clone --depth 1 https://github.com/fastxl2024/ha-fusion . && \
-  npm install --verbose --legacy-peer-deps && \
+  npm install --verbose && \
   npm run build && \
   npm prune --omit=dev && \
   rm -rf ./data/*
