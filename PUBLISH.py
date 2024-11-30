@@ -9,7 +9,7 @@ import subprocess
 
 
 def get_latest_release():
-    url = "https://api.github.com/repos/fastxl2024/ha-fusion/releases/latest"
+    url = "https://api.github.com/repos/fastxl2024/Fusion/releases/latest"
     with urllib.request.urlopen(urllib.request.Request(url)) as response:
         return json.loads(response.read().decode())
 
